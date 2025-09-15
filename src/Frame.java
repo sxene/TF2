@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Frame extends JFrame {
+public class Frame extends JFrame { //test
     JLabel background;
     public Frame() {
        // Image backgroundImage = new ImageIcon("~/IdeaProjects/TF2/src/Images/homeScreen.jpg").getImage();
