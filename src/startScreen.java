@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class startScreen extends JLabel implements ActionListener {
+public class startScreen extends JLabel implements ActionListener { 
     JButton Back;
     public startScreen(){
 
