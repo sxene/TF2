@@ -1,33 +1,37 @@
-import javax.swing.*;
+package src;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.*;
 
 public class startScreen extends JLabel implements ActionListener { 
     JButton Back;
     public startScreen(){
+         SwingUtilities.invokeLater(() -> {
 
-        ImageIcon backgroundImage = new ImageIcon("/home/zoey/IdeaProjects/TF2/src/Images/homeScreen.jpg");
-        ImageIcon start = new ImageIcon("src/Images/startButton.png");
+            ImageIcon backgroundImage = new ImageIcon("/home/zoey/IdeaProjects/TF2/src/Images/homeScreen.jpg");
+            ImageIcon start = new ImageIcon("src/Images/startButton.png");
 
-        Back = new JButton(start);
-        Back.setBounds(50, 50, 327, 71);
-        Back.setVisible(true);
-        Back.setIcon(start);
-        Back.setFocusable(false);
-        Back.addActionListener(e ->{
-            System.out.println("SKRIJR");
-        });
+            Back = new JButton(start);
+            Back.setBounds(50, 50, 327, 71);
+            Back.setVisible(true);
+            Back.setIcon(start);
+            Back.setFocusable(false);
+            Back.addActionListener(e ->{
+                System.out.println("Dogg");
+                System.out.println("nome");
+            });
 
 
-        add(Back);
+            add(Back);
 
-        setIcon(backgroundImage);
-        setVisible(true);
-        setBackground(Color.BLACK);
+            setIcon(backgroundImage);
+            setVisible(true);
+            setBackground(Color.BLACK);
 
-    }
 
+    });}
     @Override
     public void actionPerformed(ActionEvent e) {
 
