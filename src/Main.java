@@ -1,5 +1,3 @@
-package src;
-
 import javax.swing.SwingUtilities;
 
 /*
@@ -9,12 +7,11 @@ Design Enemies
  */
 //test
 public class Main {
+
     public static void main(String[] args) {
-                 SwingUtilities.invokeLater(() -> {
-                      System.out.println("Dog");
-                      Frame frame = new Frame(); //test
-                 });
-
-
+        SwingUtilities.invokeLater(() -> {
+            System.out.println("Dog");
+            Frame frame = new Frame(); //test
+        });
     }
 }
