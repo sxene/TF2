@@ -2,8 +2,6 @@ import javax.swing.*;
 
 public class Frame extends JFrame {
 
-    JLabel background;
-
     public Frame() {
         SwingUtilities.invokeLater(() -> {
             startScreen ss = new startScreen();
