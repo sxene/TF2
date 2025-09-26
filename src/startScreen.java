@@ -16,7 +16,10 @@ public class startScreen extends JLabel implements ActionListener {
         Back.setIcon(start);
         Back.setFocusable(false);
         Back.addActionListener(e ->{
-            System.out.println("SKRIJR");
+            setVisible(false);
+            homeScreen hs = new homeScreen();
+            hs.setVisible(true);
+
         });
 
 
