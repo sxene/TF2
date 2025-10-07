@@ -1,18 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Frame extends JFrame { //test
-    JLabel background;
+public class Frame extends JFrame{ //test
     public Frame() {
 
-
-        homeScreen hs = new homeScreen();
-        hs.setVisible(false);
-        add(hs);
 
         startScreen ss = new startScreen();
         ss.setVisible(true);
         add(ss);
+
 
 
 

@@ -16,9 +16,12 @@ public class startScreen extends JLabel implements ActionListener {
         Back.setIcon(start);
         Back.setFocusable(false);
         Back.addActionListener(e ->{
-            setVisible(false);
+            System.out.println("Dogff");
             homeScreen hs = new homeScreen();
-            hs.setVisible(true);
+            add(hs);
+            setBackground(Color.WHITE);
+            Back.setVisible(false);
+
 
         });
 
@@ -27,7 +30,6 @@ public class startScreen extends JLabel implements ActionListener {
 
         setIcon(backgroundImage);
         setVisible(true);
-        setBackground(Color.BLACK);
 
     }
 
