@@ -17,12 +17,16 @@ public class startScreen extends JLabel implements ActionListener {
         Back.setFocusable(false);
         Back.addActionListener(e ->{
             System.out.println("Dogff");
+
+            JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
+
+            frame.remove(this);
+
             homeScreen hs = new homeScreen();
-            add(hs);
-            setBackground(Color.WHITE);
-            Back.setVisible(false);
+            frame.add(hs);
 
-
+            frame.revalidate();
+            frame.repaint();
         });
 
 
